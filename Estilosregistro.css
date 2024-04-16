@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #7B7D7D;
+}
+ 
+.Formularioregistro
+{
+    position:  absolute;
+    top: 50%;
+    left: 28%;
+    transform: translate(0%, -50%);
+    width: 600px;
+    height: 500px;
+    background-color:aliceblue ;
+    border-radius: 15px;
+}
+
+.Formularioregistro h1{
+    text-align: center;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid silver;
+}
+
+.Formularioregistro form {
+    padding:  0 60px;
+    box-sizing: border-box;
+}
+.Iconos {
+    position: relative;
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+}
+
+.Iconoslabel {
+    width: 25px;
+    height: 25px;
+}
+
+.W{
+    width: 80px;
+    height: 80px;
+}
