@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Meta etiquetas para configuración de la página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>Contact Us</title>
+    <!-- Enlace a la librería de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Enlace a la librería de Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <style>
+        /* Estilos para el cuerpo de la página */
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        /* Estilos para el fondo del área de contacto */
+        .contact-bg {
+            background: linear-gradient(to right, #f7f7f7 50%, #ffffff 50%);
+        }
+        /* Estilos para el fondo del formulario de contacto */
+        .contact-form-bg {
+            background-color: #ffffff;
+        }
+        /* Estilos para la sección de información de contacto */
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Estilos para los elementos de información de contacto */
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        /* Estilos para los iconos en la información de contacto */
+        .contact-info-item i {
+            font-size: 32px;
+            margin-right: 10px;
+        }
+        /* Estilos para el texto en la información de contacto */
+        .contact-info-item span {
+            font-size: 18px;
+        }
+        /* Estilos para el área de derechos de autor */
+        .copyright-bg {
+            background-color: #000000;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        /* Estilos para el texto en el área de derechos de autor */
+        .copyright-bg span {
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="contact-bg text-black">
+    <!-- Contenedor principal -->
+    <div class="container mx-auto px-6 py-8">
+        <!-- Encabezado -->
+        <div class="flex justify-between items-center">
+            <div class="text-4xl font-bold">W</div>
+            <div class="flex items-center">
+                <div class="space-x-4">
+                    <!-- Enlaces de navegación -->
+                    <a href="#" class="text-gray-800 hover:text-gray-600">Inicio</a>
+                    <a href="#" class="text-gray-800 hover:text-gray-600">Sobre nosotros</a>
+                    <a href="#" class="text-gray-800 hover:text-gray-600">Contáctanos</a>
+                </div>
+                <!-- Icono de usuario -->
+                <div class="text-2xl ml-4">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="flex flex-wrap mt-16 -mx-4">
+            <!-- Información de contacto -->
+            <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0 contact-info">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">INFORMACION DE CONTACTO</h2>
+                    <!-- Detalles de contacto -->
+                    <div class="mb-6 contact-info-item">
+                        <i class="fas fa-envelope mr-2"></i>
+                        <span>info.contact@correo.com</span>
+                    </div>
+                    <div class="mb-6 contact-info-item">
+                        <i class="fas fa-phone mr-2"></i>
+                        <span>902-2548</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Formulario de contacto -->
+            <div class="w-full lg:w-1/2 px-4 contact-form-bg py-8 flex justify-end">
+                <div class="w-full lg:w-2/3">
+                    <h2 class="text-3xl font-bold mb-6">Envíanos tu consulta</h2>
+                    <p class="mb-6">¿Estamos aquí para ayudar, ya sea algo sobre algún evento o duda? ¡Envíanos tu consulta!</p>
+                    <!-- Formulario -->
+                    <form action="#" method="POST">
+                        <div class="mb-4">
+                            <input type="text" placeholder="Nombres" class="w-full p-3 bg-gray-200 rounded-md text-black">
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" placeholder="Teléfono de contacto" class="w-full p-3 bg-gray-200 rounded-md text-black">
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" placeholder="Correo electrónico" class="w-full p-3 bg-gray-200 rounded-md text-black">
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" placeholder="Asunto" class="w-full p-3 bg-gray-200 rounded-md text-black">
+                        </div>
+                        <div class="mb-6">
+                            <textarea placeholder="Escribe tu mensaje" class="w-full p-3 bg-gray-200 rounded-md text-black"
+                                rows="4"></textarea>
+                        </div>
+                        <!-- Botón de enviar -->
+                        <div class="text-right">
+                            <button type="submit"
+                                class="px-6 py-2 border border-gray-800 text-black bg-gray-200 hover:bg-gray-800 hover:text-white transition-colors duration-300">Enviar
+                                mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Pie de página -->
+        <div class="text-center text-white py-4 copyright-bg">
+            <div class="container mx-auto px-6 py-4">
+                <div class="border-t border-gray-600 pt-4">
+                    <div class="flex justify-between items-center">
+                        <div class="text-xs text-black-half text-center">
+                            <p>Seguínos</p>
+                            <!-- Enlaces a redes sociales -->
+                            <div class="flex justify-center items-center mt-1">
+                                <i class="fab fa-facebook-f text-xl mr-2"></i>
+                                <i class="fab fa-twitter text-xl mr-2"></i>
+                                <i class="fab fa-instagram text-xl"></i>
+                            </div>
+                            <!-- Texto de derechos de autor -->
+                            <span class="text-sm">Síguenos en Instagram y Facebook</span>
+                            <span class="block sm:inline-block mx-4">|</span>
+                            <span class="text-sm">Copyright © 2022 - Prohibida la reproducción total o parcial, así como su   traducción a cualquier idioma sin autorización escrita del titular. Derechos Reservados y Términos
+                                de Servicio aplican.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    </html>
+                               

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta etiquetas para configuración de la página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>W Music Platform</title>
+    <!-- Enlace a la librería de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Enlace a la fuente de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Enlace a la librería de Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <style>
+        /* Estilos para el cuerpo de la página */
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        /* Estilos para la mitad vertical del fondo */
+        .half-vertical {
+            background: linear-gradient(to right, #f7f7f7 50%, #ffffff 50%);
+        }
+        /* Estilos para el texto en color negro */
+        .text-black-half {
+            color: #000;
+        }
+        /* Estilos para el texto agrandado */
+        .text-enlarged {
+            font-size: 1.25rem;
+        }
+        /* Estilos para centrar texto */
+        .text-center {
+            text-align: center;
+        }
+        /* Estilos para centrar verticalmente */
+        .vertical-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+        }
+        /* Estilos para el contenedor de 'Sobre Nosotros' */
+        .about-us-container {
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        /* Estilos para el contenedor de 'Seguínos' */
+        .follow-us-container {
+            margin-top: 20px;
+        }
+        /* Estilos para texto blanco */
+        .white-text {
+            color: #fff; /* Cambiar a color blanco */
+        }
+        /* Estilos para el área de derechos de autor */
+        .copyright-bg {
+            background-color: #000000;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto; /* Alinear al fondo */
+        }
+    </style>
+</head>
+<body class="half-vertical">
+    <!-- Contenedor principal -->
+    <div class="container mx-auto px-6 py-4">
+        <!-- Encabezado -->
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="text-3xl font-bold text-black mr-4">W</div>
+                <!-- Barra de búsqueda -->
+                <div class="relative">
+                    <input type="search" placeholder="Buscar" class="bg-gray-700 h-10 px-5 pr-10 rounded-full text-sm focus:outline-none">
+                    <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+                        <i class="fas fa-search text-gray-400 h-4 w-4"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Enlaces de navegación -->
+            <div class="flex items-center">
+                <a href="#" class="text-black-half text-sm mx-2">Inicio</a>
+                <a href="#" class="text-black-half text-sm mx-2">Sobre nosotros</a>
+                <a href="#" class="text-black-half text-sm mx-2">Contáctanos</a>
+                <div class="text-black-half mx-2">
+                    <i class="fas fa-user-circle text-2xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="container mx-auto px-6 py-4 text-center">
+        <!-- Sección de 'Sobre Nosotros' -->
+        <div class="border-t border-gray-600 pt-4">
+            <h2 class="text-xl font-semibold text-black-half text-center">SOBRE NOSOTROS</h2>
+            <p class="mt-4 mb-8 text-black-half text-enlarged text-center about-us-container">
+                Bienvenido a nuestra plataforma de gestión de canciones. Nuestro objetivo es ofrecerte una experiencia musical excepcional, donde puedas descubrir, escuchar y compartir tus canciones favoritas con facilidad.
+            </p>
+        </div>
+        <!-- Sección de filosofía -->
+        <div class="border-t border-gray-600 pt-4 mt-4">
+            <div class="flex justify-center">
+                <div class="text-9xl font-bold text-black">W</div>
+            </div>
+            <p class="mt-6 text-black-half text-enlarged text-center">
+                Creemos en el poder de la música para conectar a las personas y enriquecer sus vidas. Creemos en proporcionar una plataforma donde los amantes de la música puedan expresarse, descubrir nuevas canciones y compartir sus pasiones con otros. Nos esforzamos por ofrecer una experiencia musical excepcional.
+            </p>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="text-center text-white py-4 copyright-bg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="border-t border-gray-600 pt-4">
+                <div class="flex justify-between items-center">
+                    <div class="text-xs text-black-half text-center follow-us-container white-text"> <!-- Cambiar a color blanco -->
+                        <p>Seguínos</p>
+                        <!-- Enlaces a redes sociales -->
+                        <div class="flex justify-center items-center mt-1">
+                            <i class="fab fa-facebook-f text-xl mr-2"></i>
+                            <i class="fab fa-twitter text-xl mr-2"></i>
+                            <i class="fab fa-instagram text-xl"></i>
+                        </div>
+                        <span class="text-sm">Síguenos en Instagram y Facebook</span>
+                        <span class="block sm:inline-block mx-4">|</span>
+                        <span class="text-sm">Copyright © 2022 - Prohibida la reproducción total o parcial, así como su
+                            traducción a cualquier idioma sin autorización escrita del titular. Derechos Reservados y Términos
+                            de Servicio aplican.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
