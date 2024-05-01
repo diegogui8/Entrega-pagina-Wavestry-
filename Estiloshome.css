@@ -11,8 +11,11 @@ body{
     height: 30px;
    
 }
+.Cancionestabla{
+    height: 5%;
 
-    
+}
+ 
  table { 
     width: 100%;
     height: 100%;
@@ -31,12 +34,35 @@ td {
 }
 .countainertendencias {
     background-color:rgb(195, 195, 195)  ;
-    width: 25%;
+    width: 32%;
+    height: 360px;
     position:  absolute;
-    top: 55%;
+    top: 48%;
     left: 10%;
-    transform: translate(50%, -50%);
+    transform: translate(40%, -40%);
    
+}
+.h1canciones{
+    font-size: 10px;
+}
+
+.Artistas{
+    background-color:rgb(195, 195, 195)  ;
+    font-size: 55%;
+    text-align: center;
+    width: 39%;
+    height: 53%;
+    position:  absolute;
+    top: 48%;
+    left: 10%;
+    transform: translate(120%, -40%);
+    
+
+}
+.imgcanciones{
+    width: 30px;
+    height: 30px;
+
 }
 .h1canciones {
     text-align: center;
